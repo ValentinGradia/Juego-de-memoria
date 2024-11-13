@@ -1,0 +1,20 @@
+<div class="body">
+  <div class="logout" style="margin-top: 5%;">
+    <i (click)="cerrarSesion()" class="fa-solid fa-right-from-bracket fa-lg"></i>
+    <span style="margin-left: 8px;font-size: 18px;">Cerrar sesión</span>
+  </div>
+  <div style="margin-top: 3vh;display: flex;justify-content: center;flex-direction: column;align-items: center;">
+    <h1>Seleccione la dificultad</h1>
+    <div class="button-group">
+        <button routerLink="/facil" style="background-color: #4caf50;" class="difficulty-btn" (click)="seleccionarDificultad('facil')">Fácil</button>
+        <button routerLink="/intermedio" style="background-color:#ff9800 ;" class="difficulty-btn" (click)="seleccionarDificultad('intermedio')">Intermedio</button>
+        <button routerLink="/dificil" style="background-color:#f44336 ;" class="difficulty-btn" (click)="seleccionarDificultad('dificil')">Difícil</button>
+      </div>
+  
+    <div class="registro-group"  style="margin-top: 10px;text-align: center;">
+      <h2 style="margin-top: 5px;margin-bottom:0;">Registros</h2>
+      <button id="registro" class="difficulty-btn" style="background-color: #d73d22;"  routerLink="/registros">Ver registros</button>
+    </div>
+  </div>
+</div>
+

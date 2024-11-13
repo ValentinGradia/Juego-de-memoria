@@ -1,0 +1,65 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0; /* Fondo opcional */
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1,h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.button-group, .registro-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre botones */
+}
+
+.difficulty-btn {
+    background-color: rgb(206, 100, 100);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 40px;
+    height: 110px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 85vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#registro{
+    height: 130px;
+}
+
+.difficulty-btn:hover {
+    background-color: #c33c20;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Mostrar que es un elemento interactivo */
+  }
+  
+  .logout:hover {
+    background-color: #e9ecef; /* Fondo un poco más oscuro al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más profunda en hover */
+  }

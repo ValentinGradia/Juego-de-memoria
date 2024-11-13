@@ -1,0 +1,46 @@
+<div class="body">
+  <div id="tablero">
+    <div>
+      <div style="display: flex;justify-content: baseline;align-items: center;">
+        <h2>Tiempo: {{ seconds }} segundos</h2>
+        <div style="margin-left: 15px;background-color: grey;height: 30px;width: 30px;display: flex;justify-content: center;align-items: center;border-radius: 20px;margin-top: 2px;" >
+          <i class="fa-solid fa-pause fa-xl"></i>
+        </div>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <td><button id="0" class="flip-btn" (click)="voltear($event)">?</button></td>
+        <td><button id="1" class="flip-btn" (click)="voltear($event)">?</button></td>
+      </tr>
+      <tr>
+        <td><button id="2" class="flip-btn" (click)="voltear($event)">?</button></td>
+        <td><button id="3" class="flip-btn" (click)="voltear($event)">?</button></td>
+      </tr>
+      <tr>
+        <td><button id="4" class="flip-btn" (click)="voltear($event)">?</button></td>
+        <td><button id="5" class="flip-btn" (click)="voltear($event)">?</button></td>
+      </tr>
+      <tr>
+        <td><button id="6" class="flip-btn" (click)="voltear($event)">?</button></td>
+        <td><button id="7" class="flip-btn" (click)="voltear($event)">?</button></td>
+      </tr>
+      <tr>
+        <td><button id="8" class="flip-btn" (click)="voltear($event)">?</button></td>
+        <td><button id="9" class="flip-btn" (click)="voltear($event)">?</button></td>
+      </tr>
+    </table>
+  </div>
+  <br>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" (click)="cerrarModal()">&times;</span>
+    <h2>Felicidades, haz completado el nivel intermedio</h2>
+    <p>¿Quieres volver a jugar?</p>
+    <button  routerLink="/home" (click)="cerrarModal()">No</button>
+    <button  (click)="cerrarModal()">Si</button>
+    <button (click)="guardarPartida()">Guardar partida</button>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    position: relative;
+    height: 100vh;
+    text-align: center;
+}
+
+.grupo{
+    margin-top: 15px;
+}
+
+.input-group{
+    margin-top: 15px;
+}
+
+.login-box h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.highlight {
+    color: rgb(206, 100, 100);
+}
+
+.subheading {
+    color: chocolate;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.input-group input {
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+
+}
+
+.iconos button {
+    background-color: rgb(206, 100, 100); /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interior */
+    height: 50px;
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button {
+    outline: 0;
+    background: black;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #c33c20;
+}

@@ -1,0 +1,49 @@
+<div class="body">
+  <div class="container" style="margin-top: 10vh;text-align: center;">
+    <h1>Registros</h1>
+    <div class="button-container">
+      <button (click)="mostrarFaciles()" class="difficulty-button easy">Fácil</button>
+      <button (click)="mostrarIntermedios()" class="difficulty-button intermediate">Intermedio</button>
+      <button (click)="mostrarDificiles()" class="difficulty-button hard">Difícil</button>
+    </div>
+    <div class="registros-content">
+      <table class="simple-table">
+        <thead>
+          <tr>
+            <th>Correo</th>
+            <th>Tiempo en segundos</th>
+          </tr>
+        </thead>
+        <tbody>
+            @if (this.facil) {
+              @for (registro of faciles; track $index) {
+                <tr>
+                  <th>{{registro.Jugador}}</th>
+                  <th>{{registro.Tiempo}}</th>
+                </tr>
+              }
+            }
+            @else if (this.intermedio) {
+              @for (registro of intermedios; track $index) {
+                <tr>
+                  <th>{{registro.Jugador}}</th>
+                  <th>{{registro.Tiempo}}</th>
+                </tr>
+              }
+            }
+            @else {
+              @for (registro of dificiles; track $index) {
+                <tr>
+                  <th>{{registro.Jugador}}</th>
+                  <th>{{registro.Tiempo}}</th>
+                </tr>
+              }
+            }
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <button (click)="volver()" class="fixed-button" >Volver</button>
+    </div>
+  </div>
+</div>

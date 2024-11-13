@@ -1,0 +1,140 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #tablero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    width: 50%; /* Cada celda ocupa el 50% del ancho */
+    height: 33.33%; /* Cada fila ocupa un tercio del alto */
+    padding: 5px;
+}
+
+.modal {
+    display: none; /* Mostrar el modal cuando esté activo */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1000; /* Por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilitar desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 15% auto; /* Margen de 15% desde arriba y auto para centrar */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #888; /* Borde */
+    width: 80%; /* Ancho del contenido del modal */
+    max-width: 600px; /* Ancho máximo */
+    border-radius: 5px; /* Bordes redondeados */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Posición relativa para el botón de cerrar */
+  }
+  
+  .close {
+    color: #aaa; /* Color del texto */
+    float: right; /* Alinear a la derecha */
+    font-size: 28px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black; /* Color al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre él */
+  }
+
+button {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    background-color: rgb(236, 147, 136);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .modal-content button {
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 80px;
+}
+
+.pause-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pause-button:hover {
+  background-color: #0056b3;
+}
+
+.pause-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.pause-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pause-content button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.pause-content button:hover {
+  background-color: #0056b3;
+}
